@@ -1,0 +1,235 @@
+fileFormatVersion: 2
+guid: 4d242d45a6001e34b9b1e50466a39f8d
+timeCreated: 1539657389
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: bamboo_mesh
+    100002: Bone_bamboo02
+    100004: Bone_bamboo03
+    100006: new_Bone001
+    100008: new_Bone002
+    100010: new_Bone003
+    100012: new_Bone007
+    100014: new_Bone009
+    100016: new_Bone012
+    100018: new_Bone017
+    100020: new_Bone019
+    100022: new_Bone022
+    100024: new_Bone023
+    100026: new_Bone026
+    100028: new_Bone027
+    100030: new_Bone029
+    100032: new_Bone031
+    100034: new_Bone034
+    100036: new_Bone039
+    100038: new_Bone041
+    100040: new_Bone044
+    100042: new_Bone045
+    100044: new_Bone048
+    100046: new_Bone049
+    100048: new_Bone050
+    100050: new_Bone051
+    100052: new_Bone054
+    100054: new_Bone055
+    100056: new_Bone056
+    100058: new_Bone057
+    100060: new_Bone058
+    100062: new_Bone061
+    100064: new_Bone062
+    100066: new_Bone063
+    100068: new_Bone069
+    100070: new_Bone076
+    100072: new_Bone079
+    100074: new_Bone081
+    100076: new_Bone082
+    100078: new_Bone091
+    100080: new_Bone093
+    100082: new_Bone094
+    100084: new_Bone095
+    100086: new_Bone096
+    100088: new_Bone104
+    100090: new_Bone105
+    100092: new_Bone107
+    100094: new_Bone109
+    100096: new_Bone167
+    100098: new_Bone170
+    100100: new_Bone171
+    100102: new_Bone172
+    100104: new_Bone173
+    100106: new_Bone174
+    100108: new_Bone175
+    100110: new_rrrrarmbones1_L
+    100112: new_rrrrarmbones1_R
+    100114: new_rrrrarmbones2_L
+    100116: new_rrrrarmbones2_R
+    100118: new_rrrrarmbones3_L
+    100120: new_rrrrarmbones3_R
+    100122: new_rrrrarmbones4_L
+    100124: new_rrrrarmbones4_R
+    100126: new_rrrrfootbones_1_L
+    100128: new_rrrrfootbones_1_R
+    100130: new_rrrrfootbones_2_L
+    100132: new_rrrrfootbones_2_R
+    100134: new_rrrrlegbone1_L
+    100136: new_rrrrlegbone1_R
+    100138: new_rrrrlegbone2_L
+    100140: new_rrrrlegbone2_R
+    100142: new_rrrrspline_bones0
+    100144: new_rrrrspline_bones2
+    100146: new_rrrrspline_bones3
+    100148: PANDA
+    100150: //RootNode
+    100152: Panda_mesh
+    400000: bamboo_mesh
+    400002: Bone_bamboo02
+    400004: Bone_bamboo03
+    400006: new_Bone001
+    400008: new_Bone002
+    400010: new_Bone003
+    400012: new_Bone007
+    400014: new_Bone009
+    400016: new_Bone012
+    400018: new_Bone017
+    400020: new_Bone019
+    400022: new_Bone022
+    400024: new_Bone023
+    400026: new_Bone026
+    400028: new_Bone027
+    400030: new_Bone029
+    400032: new_Bone031
+    400034: new_Bone034
+    400036: new_Bone039
+    400038: new_Bone041
+    400040: new_Bone044
+    400042: new_Bone045
+    400044: new_Bone048
+    400046: new_Bone049
+    400048: new_Bone050
+    400050: new_Bone051
+    400052: new_Bone054
+    400054: new_Bone055
+    400056: new_Bone056
+    400058: new_Bone057
+    400060: new_Bone058
+    400062: new_Bone061
+    400064: new_Bone062
+    400066: new_Bone063
+    400068: new_Bone069
+    400070: new_Bone076
+    400072: new_Bone079
+    400074: new_Bone081
+    400076: new_Bone082
+    400078: new_Bone091
+    400080: new_Bone093
+    400082: new_Bone094
+    400084: new_Bone095
+    400086: new_Bone096
+    400088: new_Bone104
+    400090: new_Bone105
+    400092: new_Bone107
+    400094: new_Bone109
+    400096: new_Bone167
+    400098: new_Bone170
+    400100: new_Bone171
+    400102: new_Bone172
+    400104: new_Bone173
+    400106: new_Bone174
+    400108: new_Bone175
+    400110: new_rrrrarmbones1_L
+    400112: new_rrrrarmbones1_R
+    400114: new_rrrrarmbones2_L
+    400116: new_rrrrarmbones2_R
+    400118: new_rrrrarmbones3_L
+    400120: new_rrrrarmbones3_R
+    400122: new_rrrrarmbones4_L
+    400124: new_rrrrarmbones4_R
+    400126: new_rrrrfootbones_1_L
+    400128: new_rrrrfootbones_1_R
+    400130: new_rrrrfootbones_2_L
+    400132: new_rrrrfootbones_2_R
+    400134: new_rrrrlegbone1_L
+    400136: new_rrrrlegbone1_R
+    400138: new_rrrrlegbone2_L
+    400140: new_rrrrlegbone2_R
+    400142: new_rrrrspline_bones0
+    400144: new_rrrrspline_bones2
+    400146: new_rrrrspline_bones3
+    400148: PANDA
+    400150: //RootNode
+    400152: Panda_mesh
+    4300000: Panda_mesh
+    4300002: bamboo_mesh
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: bamboo_mesh
+    13700002: Panda_mesh
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
