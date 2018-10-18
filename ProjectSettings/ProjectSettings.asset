@@ -566,11 +566,11 @@ PlayerSettings:
   m_MobileRenderingPath: 1
   metroPackageName: HoloPanda
   metroPackageVersion: 
-  metroCertificatePath: 
+  metroCertificatePath: C:\Users\Nutec1\Documents\Unity\HoloPanda\Assets\WSATestCertificate.pfx
   metroCertificatePassword: 
-  metroCertificateSubject: 
-  metroCertificateIssuer: 
-  metroCertificateNotAfter: 0000000000000000
+  metroCertificateSubject: DefaultCompany
+  metroCertificateIssuer: DefaultCompany
+  metroCertificateNotAfter: 000145213c85d501
   metroApplicationDescription: HoloPanda
   wsaImages: {}
   metroTileShortName: 
