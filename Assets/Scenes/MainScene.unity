@@ -20,11 +20,11 @@ RenderSettings:
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientSkyColor: {r: 0.1, g: 0.1, b: 0.1, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
-  m_AmbientMode: 0
+  m_AmbientMode: 4
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
   m_HaloStrength: 0.5
@@ -113,6 +113,56 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &154269226
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 154269227}
+  - component: {fileID: 154269228}
+  m_Layer: 0
+  m_Name: SpeechInputSource
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &154269227
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 154269226}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1397954259}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &154269228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 154269226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c62fd7a55ba7458499b69cae18f83806, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PersistentKeywords: 0
+  RecognizerStart: 0
+  Keywords:
+  - Keyword: Eat
+    KeyCode: 0
+  - Keyword: Sit Down
+    KeyCode: 0
+  - Keyword: Stay
+    KeyCode: 0
+  recognitionConfidenceLevel: 1
 --- !u!1001 &211369850
 Prefab:
   m_ObjectHideFlags: 0
@@ -169,7 +219,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4023705963593076, guid: 784ee835a59b70b40a37bf50ad85fd4d, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0.534
+      value: -0.048
       objectReference: {fileID: 0}
     - target: {fileID: 4023705963593076, guid: 784ee835a59b70b40a37bf50ad85fd4d, type: 2}
       propertyPath: m_LocalPosition.y
@@ -177,7 +227,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4023705963593076, guid: 784ee835a59b70b40a37bf50ad85fd4d, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 6.647
+      value: 0.294
       objectReference: {fileID: 0}
     - target: {fileID: 4023705963593076, guid: 784ee835a59b70b40a37bf50ad85fd4d, type: 2}
       propertyPath: m_LocalRotation.x
@@ -334,6 +384,30 @@ Prefab:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4000013985985722, guid: 3eddd1c29199313478dd3f912bfab2ab, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4187953886819872, guid: 3eddd1c29199313478dd3f912bfab2ab, type: 2}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010261267946, guid: 3eddd1c29199313478dd3f912bfab2ab, type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4277215840702346, guid: 3eddd1c29199313478dd3f912bfab2ab, type: 2}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4521646291090770, guid: 3eddd1c29199313478dd3f912bfab2ab, type: 2}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4532035439910448, guid: 3eddd1c29199313478dd3f912bfab2ab, type: 2}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3eddd1c29199313478dd3f912bfab2ab, type: 2}
   m_IsPrefabParent: 0
@@ -354,7 +428,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4447796024737700, guid: 4df0e367d2b683840a1b7a6d0b3cf3f8, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 9
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4447796024737700, guid: 4df0e367d2b683840a1b7a6d0b3cf3f8, type: 2}
       propertyPath: m_LocalRotation.x
@@ -426,6 +500,87 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d29bc40b7f3df26479d6a0aac211c355, type: 2}
   m_IsPrefabParent: 0
+--- !u!4 &1397954259 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4000011656901714, guid: 3eddd1c29199313478dd3f912bfab2ab,
+    type: 2}
+  m_PrefabInternal: {fileID: 1182405936}
+--- !u!1 &1681541735 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1165399184122170, guid: 4df0e367d2b683840a1b7a6d0b3cf3f8,
+    type: 2}
+  m_PrefabInternal: {fileID: 1355987427}
+--- !u!114 &1681541736 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114387129994714528, guid: 4df0e367d2b683840a1b7a6d0b3cf3f8,
+    type: 2}
+  m_PrefabInternal: {fileID: 1355987427}
+  m_Script: {fileID: 11500000, guid: 098a2082dec8d3c4893557fe52b41b1c, type: 3}
+--- !u!114 &1681541737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1681541735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7d6513c2cdf97f409654a2a4114d9b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Keywords:
+  - Keyword: Eat
+    Response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1681541736}
+          m_MethodName: SetEat
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 1
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  - Keyword: Sit Down
+    Response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1681541736}
+          m_MethodName: SetLayDown
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 1
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  - Keyword: Stay
+    Response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1681541736}
+          m_MethodName: SetIdle
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 1
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  IsGlobalListener: 0
+  PersistentKeywords: 0
 --- !u!114 &1849694444 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114611684728110934, guid: a611e772ef8ddf64d8106a9cbb70f31c,
