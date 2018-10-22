@@ -131,9 +131,9 @@ public class MainManager : MonoBehaviour
     }
 
     private void InstantiateNPCs(Vector3 floorPosition)
-    {        
+    {
         if (_pandaPrefab != null)
-        {            
+        {
             _activePanda = Instantiate(_pandaPrefab.gameObject, floorPosition, Quaternion.identity).GetComponent<Panda>();
 
             if (_headsUpIndicator != null)
