@@ -116,16 +116,19 @@ public class MainManager : MonoBehaviour
         {
             // retrieve a large floor area from spatial understanding
             floorPosition = resultsTopology[0].position;
-            _floorPosition = floorPosition;
+            _floorPosition = floorPosition;            
         }
         else
         {
             // just get floor in front of the player
-            var inFrontOfCamera = Camera.main.transform.position + Camera.main.transform.forward * 2.0f;
-            floorPosition = new Vector3(inFrontOfCamera.x, alignment.FloorYValue, 2.69f);
+            //var inFrontOfCamera = Camera.main.transform.position + Camera.main.transform.forward * 1.5f;
+            //floorPosition = new Vector3(inFrontOfCamera.x, alignment.FloorYValue, 2.0f);
         }
         //if (_floorObject != null)
-        {            
+        {
+            // just get floor in front of the player
+            var inFrontOfCamera = Camera.main.transform.position + Camera.main.transform.forward * 1.5f;
+            floorPosition = new Vector3(inFrontOfCamera.x, alignment.FloorYValue, 2.0f);
             InstantiateNPCs(floorPosition);
         }
     }
