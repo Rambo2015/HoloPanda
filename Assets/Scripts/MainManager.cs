@@ -36,14 +36,6 @@ public class MainManager : MonoBehaviour
         SpatialUnderstanding.Instance.ScanStateChanged += Instance_ScanStateChanged;        
     }
 
-    //private void OnTappedEvent(TappedEventArgs tappedEventArgs)
-    //{
-    //    if (_villain == null) { return; }
-    //    _villain.KillVictim();
-    //    DestroyNPCs();
-    //    if (_floorPosition != Vector3.zero) { InstantiateNPCs(_floorPosition); }
-    //}
-
     private void Instance_ScanStateChanged()
     {
         if ((SpatialUnderstanding.Instance.ScanState == SpatialUnderstanding.ScanStates.Done) &&

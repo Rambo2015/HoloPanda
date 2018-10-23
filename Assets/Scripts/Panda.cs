@@ -11,12 +11,14 @@ public class Panda : MonoBehaviour, IInputHandler
     [SerializeField] private GameObject _bamboo;
     [Tooltip("The Panda Paw to hold the food/bamboo")]
     [SerializeField] private Transform _pawToHoldBamboo;  // 'PANDA/new_Bone009' in the model is the left paw
+    [Tooltip("Angular speed in radians per sec.")]
+    [SerializeField] private float angularSpeed = 1f;
     [SerializeField] private AudioSource _audioSource;
     
     [SerializeField] private AudioClip _bearBreath;
     [SerializeField] private AudioClip _bearSounds;
     [SerializeField] private AudioClip _chewing;
-
+    
     private Animator _animator;
     // Animator Hashes, for efficiency
     private int _isEatingParameterHash = Animator.StringToHash("IsEating");
@@ -43,6 +45,25 @@ public class Panda : MonoBehaviour, IInputHandler
     void Start()
     {
         SetIdle();
+    }    
+
+    void Update()
+    {
+        RotatePandaTowardsCamera();
+    }    
+
+    private void RotatePandaTowardsCamera()
+    {
+        Vector3 targetDir = this.transform.position - HoloToolkit.Unity.CameraCache.Main.transform.position;
+
+        // The step size is equal to speed times frame time.
+        float step = angularSpeed * Time.deltaTime;
+
+        Vector3 newDir = Vector3.RotateTowards(transform.forward, targetDir, step, 0.0f);
+        //Debug.DrawRay(transform.position, newDir, Color.red);
+
+        // Move our position a step closer to the target.
+        transform.rotation = Quaternion.LookRotation(newDir);
     }
 
     private void ShowBamboo()
@@ -139,7 +160,6 @@ public class Panda : MonoBehaviour, IInputHandler
         _animator.SetBool(_isIdlingParameterHas, _isIdling);
         _animator.SetBool(_isLayingDownParameterHash, _isLayingDown);
     }
-
 
     IEnumerator PlayClip(AudioClip clip, float delayToStartInSeconds = 0f)
     {
