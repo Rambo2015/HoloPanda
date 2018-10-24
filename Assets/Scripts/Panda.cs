@@ -13,6 +13,7 @@ public class Panda : MonoBehaviour, IInputHandler
     [SerializeField] private Transform _pawToHoldBamboo;  // 'PANDA/new_Bone009' in the model is the left paw
     [Tooltip("Angular speed in radians per sec.")]
     [SerializeField] private float angularSpeed = 1f;
+    [SerializeField] private Transform _pandaTransformToRotate;
     [SerializeField] private AudioSource _audioSource;
     
     [SerializeField] private AudioClip _bearBreath;
@@ -37,6 +38,7 @@ public class Panda : MonoBehaviour, IInputHandler
         Assert.IsNotNull(_animator);
         Assert.IsNotNull(_bamboo);
         Assert.IsNotNull(_pawToHoldBamboo);
+        Assert.IsNotNull(_pandaTransformToRotate);
         Assert.IsNotNull(_audioSource);
         Assert.IsNotNull(_bearBreath);
         Assert.IsNotNull(_bearSounds);
@@ -70,16 +72,17 @@ public class Panda : MonoBehaviour, IInputHandler
 
     private void RotatePandaTowardsCamera()
     {
-        Vector3 targetDir = HoloToolkit.Unity.CameraCache.Main.transform.position - this.transform.position;
+        //Vector3 targetDir = HoloToolkit.Unity.CameraCache.Main.transform.position - _pandaTransformToRotate.position;
+        Vector3 targetDir = HoloToolkit.Unity.CameraCache.Main.transform.position.With(y: 0) - _pandaTransformToRotate.position.With(y:0);
 
         // The step size is equal to speed times frame time.
         float step = angularSpeed * Time.deltaTime;
 
-        Vector3 newDir = Vector3.RotateTowards(transform.forward, targetDir, step, 0.0f);
+        Vector3 newDir = Vector3.RotateTowards(_pandaTransformToRotate.forward.With(y:0), targetDir, step, 0.0f);
         //Debug.DrawRay(transform.position, newDir, Color.red);
 
         // Move our position a step closer to the target.
-        transform.rotation = Quaternion.LookRotation(newDir);
+        _pandaTransformToRotate.rotation = Quaternion.LookRotation(newDir);
     }
 
     private void ShowBamboo()
