@@ -28,6 +28,7 @@ public class Panda : MonoBehaviour, IInputHandler
     private bool _isEating = false;
     private bool _isLayingDown = false;
     private bool _isIdling = false;
+    private bool _isRotating = false;
     
     void Awake()
     {
@@ -49,12 +50,27 @@ public class Panda : MonoBehaviour, IInputHandler
 
     void Update()
     {
-        RotatePandaTowardsCamera();
-    }    
+        if (_isRotating)
+        {
+            RotatePandaTowardsCamera();
+        }
+    }
+
+    public void RotatePandaOnOff(float delay = 3f)
+    {
+        StartCoroutine(SetRotateOnOffWithDelay(delay));
+    }
+
+    private IEnumerator SetRotateOnOffWithDelay(float delay)
+    {
+        _isRotating = true;
+        yield return new WaitForSeconds(delay);
+        _isRotating = false;
+    }
 
     private void RotatePandaTowardsCamera()
     {
-        Vector3 targetDir = this.transform.position - HoloToolkit.Unity.CameraCache.Main.transform.position;
+        Vector3 targetDir = HoloToolkit.Unity.CameraCache.Main.transform.position - this.transform.position;
 
         // The step size is equal to speed times frame time.
         float step = angularSpeed * Time.deltaTime;
