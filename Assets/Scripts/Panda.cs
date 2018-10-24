@@ -13,13 +13,12 @@ public class Panda : MonoBehaviour, IInputHandler
     [SerializeField] private Transform _pawToHoldBamboo;  // 'PANDA/new_Bone009' in the model is the left paw
     [Tooltip("Angular speed in radians per sec.")]
     [SerializeField] private float angularSpeed = 1f;
-    [SerializeField] private Transform _pandaTransformToRotate;
-    [SerializeField] private AudioSource _audioSource;
-    
+    [SerializeField] private Transform _pandaTransformToRotate;    
     [SerializeField] private AudioClip _bearBreath;
     [SerializeField] private AudioClip _bearSounds;
     [SerializeField] private AudioClip _chewing;
     
+    private AudioSource _audioSource;
     private Animator _animator;
     // Animator Hashes, for efficiency
     private int _isEatingParameterHash = Animator.StringToHash("IsEating");
@@ -58,7 +57,11 @@ public class Panda : MonoBehaviour, IInputHandler
         }
     }
 
-    public void RotatePandaOnOff(float delay = 3f)
+    /// <summary>
+    /// Wrapper for the Coroutine SetRotateOnOffWithDelay, so it can be plugged into the speech module input
+    /// </summary>
+    /// <param name="delay"></param>
+    public void RotatePandaOnOff(float delay = 5f)
     {
         StartCoroutine(SetRotateOnOffWithDelay(delay));
     }
@@ -72,16 +75,14 @@ public class Panda : MonoBehaviour, IInputHandler
 
     private void RotatePandaTowardsCamera()
     {
-        //Vector3 targetDir = HoloToolkit.Unity.CameraCache.Main.transform.position - _pandaTransformToRotate.position;
+        // Get the direction from the Panda to the Camera, both projected into y = 0
         Vector3 targetDir = HoloToolkit.Unity.CameraCache.Main.transform.position.With(y: 0) - _pandaTransformToRotate.position.With(y:0);
-
-        // The step size is equal to speed times frame time.
+        
         float step = angularSpeed * Time.deltaTime;
 
         Vector3 newDir = Vector3.RotateTowards(_pandaTransformToRotate.forward.With(y:0), targetDir, step, 0.0f);
         //Debug.DrawRay(transform.position, newDir, Color.red);
-
-        // Move our position a step closer to the target.
+        
         _pandaTransformToRotate.rotation = Quaternion.LookRotation(newDir);
     }
 

@@ -14,8 +14,7 @@ public class MainManager : MonoBehaviour
     [SerializeField]
     private float kMinWallAreaForComplete = 5.0f;
 
-    [SerializeField] private Panda _pandaPrefab;
-    [SerializeField] private GameObject _bambooPrefab;    
+    [SerializeField] private Panda _pandaPrefab;    
 
     private Panda _activePanda;    
 
@@ -27,7 +26,6 @@ public class MainManager : MonoBehaviour
     void Awake()
     {
         Assert.IsNotNull(_pandaPrefab);
-        Assert.IsNotNull(_bambooPrefab);
     }
 
     void Start()
