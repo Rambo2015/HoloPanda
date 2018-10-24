@@ -120,7 +120,7 @@ public class MainManager : MonoBehaviour
         {
             // just get floor in front of the player
             var inFrontOfCamera = Camera.main.transform.position + Camera.main.transform.forward * 1.5f;
-            floorPosition = new Vector3(inFrontOfCamera.x, alignment.FloorYValue, 2.0f);
+            floorPosition = new Vector3(inFrontOfCamera.x, alignment.FloorYValue, 1.5f);
             InstantiateNPCs(floorPosition);
         }
     }
