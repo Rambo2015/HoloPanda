@@ -1,0 +1,274 @@
+fileFormatVersion: 2
+guid: 81a6fff67977bd84f9c5aa553b401736
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Bone_bamboo02
+    100002: Bone_bamboo03
+    100004: new_Bone001
+    100006: new_Bone002
+    100008: new_Bone003
+    100010: new_Bone007
+    100012: new_Bone009
+    100014: new_Bone012
+    100016: new_Bone017
+    100018: new_Bone019
+    100020: new_Bone022
+    100022: new_Bone023
+    100024: new_Bone026
+    100026: new_Bone027
+    100028: new_Bone029
+    100030: new_Bone031
+    100032: new_Bone034
+    100034: new_Bone039
+    100036: new_Bone041
+    100038: new_Bone044
+    100040: new_Bone045
+    100042: new_Bone048
+    100044: new_Bone049
+    100046: new_Bone050
+    100048: new_Bone051
+    100050: new_Bone054
+    100052: new_Bone055
+    100054: new_Bone056
+    100056: new_Bone057
+    100058: new_Bone058
+    100060: new_Bone061
+    100062: new_Bone062
+    100064: new_Bone063
+    100066: new_Bone069
+    100068: new_Bone076
+    100070: new_Bone079
+    100072: new_Bone081
+    100074: new_Bone082
+    100076: new_Bone091
+    100078: new_Bone093
+    100080: new_Bone094
+    100082: new_Bone095
+    100084: new_Bone096
+    100086: new_Bone104
+    100088: new_Bone105
+    100090: new_Bone107
+    100092: new_Bone109
+    100094: new_Bone167
+    100096: new_Bone170
+    100098: new_Bone171
+    100100: new_Bone172
+    100102: new_Bone173
+    100104: new_Bone174
+    100106: new_Bone175
+    100108: new_rrrrarmbones1_L
+    100110: new_rrrrarmbones1_R
+    100112: new_rrrrarmbones2_L
+    100114: new_rrrrarmbones2_R
+    100116: new_rrrrarmbones3_L
+    100118: new_rrrrarmbones3_R
+    100120: new_rrrrarmbones4_L
+    100122: new_rrrrarmbones4_R
+    100124: new_rrrrfootbones_1_L
+    100126: new_rrrrfootbones_1_R
+    100128: new_rrrrfootbones_2_L
+    100130: new_rrrrfootbones_2_R
+    100132: new_rrrrlegbone1_L
+    100134: new_rrrrlegbone1_R
+    100136: new_rrrrlegbone2_L
+    100138: new_rrrrlegbone2_R
+    100140: new_rrrrspline_bones0
+    100142: new_rrrrspline_bones2
+    100144: new_rrrrspline_bones3
+    100146: PANDA
+    100148: //RootNode
+    100150: Panda_mesh
+    400000: Bone_bamboo02
+    400002: Bone_bamboo03
+    400004: new_Bone001
+    400006: new_Bone002
+    400008: new_Bone003
+    400010: new_Bone007
+    400012: new_Bone009
+    400014: new_Bone012
+    400016: new_Bone017
+    400018: new_Bone019
+    400020: new_Bone022
+    400022: new_Bone023
+    400024: new_Bone026
+    400026: new_Bone027
+    400028: new_Bone029
+    400030: new_Bone031
+    400032: new_Bone034
+    400034: new_Bone039
+    400036: new_Bone041
+    400038: new_Bone044
+    400040: new_Bone045
+    400042: new_Bone048
+    400044: new_Bone049
+    400046: new_Bone050
+    400048: new_Bone051
+    400050: new_Bone054
+    400052: new_Bone055
+    400054: new_Bone056
+    400056: new_Bone057
+    400058: new_Bone058
+    400060: new_Bone061
+    400062: new_Bone062
+    400064: new_Bone063
+    400066: new_Bone069
+    400068: new_Bone076
+    400070: new_Bone079
+    400072: new_Bone081
+    400074: new_Bone082
+    400076: new_Bone091
+    400078: new_Bone093
+    400080: new_Bone094
+    400082: new_Bone095
+    400084: new_Bone096
+    400086: new_Bone104
+    400088: new_Bone105
+    400090: new_Bone107
+    400092: new_Bone109
+    400094: new_Bone167
+    400096: new_Bone170
+    400098: new_Bone171
+    400100: new_Bone172
+    400102: new_Bone173
+    400104: new_Bone174
+    400106: new_Bone175
+    400108: new_rrrrarmbones1_L
+    400110: new_rrrrarmbones1_R
+    400112: new_rrrrarmbones2_L
+    400114: new_rrrrarmbones2_R
+    400116: new_rrrrarmbones3_L
+    400118: new_rrrrarmbones3_R
+    400120: new_rrrrarmbones4_L
+    400122: new_rrrrarmbones4_R
+    400124: new_rrrrfootbones_1_L
+    400126: new_rrrrfootbones_1_R
+    400128: new_rrrrfootbones_2_L
+    400130: new_rrrrfootbones_2_R
+    400132: new_rrrrlegbone1_L
+    400134: new_rrrrlegbone1_R
+    400136: new_rrrrlegbone2_L
+    400138: new_rrrrlegbone2_R
+    400140: new_rrrrspline_bones0
+    400142: new_rrrrspline_bones2
+    400144: new_rrrrspline_bones3
+    400146: PANDA
+    400148: //RootNode
+    400150: Panda_mesh
+    4300000: Panda_mesh
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: Panda_mesh
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #25'
+    second: {fileID: 2100000, guid: d1c40a443e70683439d3a88c33e01665, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 652
+      lastFrame: 700
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
