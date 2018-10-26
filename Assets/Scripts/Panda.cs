@@ -108,26 +108,8 @@ public class Panda : MonoBehaviour, IInputHandler
     }
 
     void IInputHandler.OnInputUp(InputEventData eventData)
-    {
-        //Debug.Log("OnInputUp");
-        if (_isIdling)
-        {
-            SetEat();            
-            return;
-        }
-
-        if (_isLayingDown)
-        {
-            SetIdle();
-            return;
-        }
-                
-        //if (_isEating)
-        //{
-            SetLayDown();
-            return;
-        //}
-        
+    {        
+        TryRotate();
     }
 
     #region Helper Methods
