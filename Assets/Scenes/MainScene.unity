@@ -262,7 +262,7 @@ Prefab:
     - target: {fileID: 114154727598860592, guid: 5fab24cebbee63f4baf0b051bee65a12,
         type: 2}
       propertyPath: Keywords.Array.data[4].Keyword
-      value: C'mon
+      value: Hey Panda
       objectReference: {fileID: 0}
     - target: {fileID: 114154727598860592, guid: 5fab24cebbee63f4baf0b051bee65a12,
         type: 2}
