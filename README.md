@@ -13,4 +13,4 @@
 * **Eat** - Panda eats that delicious bamboo
 * **Sit Down** - Panda lays on the floor
 * **Stay** or **Wake Up** - Panda stands up
-* **Over Here** or **c'mon** - Panda rotates towards the User
+* **Over Here** or **c'mon** - Panda rotates towards the User (_just works when Panda is standing up - idling_)

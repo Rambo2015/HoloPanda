@@ -69,9 +69,7 @@ public class Panda : MonoBehaviour, IInputHandler
         // Get the direction from the Panda to the Camera, both projected into y = 0
         Vector3 targetDir = HoloToolkit.Unity.CameraCache.Main.transform.position.With(y: 0) - _pandaTransformToRotate.position.With(y: 0);
         targetDir = Quaternion.AngleAxis(35f, Vector3.up) * targetDir;
-        Vector3 forwardDir = _pandaTransformToRotate.forward;
-        //Debug.Log("origin " + _pandaTransformToRotate.transform.position.With(y: 0));
-        //Debug.Log("forward world space " + forwardDir);       
+        Vector3 forwardDir = _pandaTransformToRotate.forward;        
         float angleThresholdToStop = 3.0f;
         float step = angularSpeed * Time.fixedDeltaTime;
         Vector3 newDir;
@@ -142,9 +140,9 @@ public class Panda : MonoBehaviour, IInputHandler
         SetAnimatorParameters();
         StartCoroutine(ShowAndHideBamboo());
         StartCoroutine(PlayClip(_chewing, 6f));
-        // Setting _isEating = false, to stop repeating this state
+        // Setting _isEating = false, to stop repeating this state        
         _isEating = false;
-        StartCoroutine(SetAnimatorParameters(3f));        
+        StartCoroutine(SetAnimatorParameters(3f));
     }
 
     IEnumerator ShowAndHideBamboo()
