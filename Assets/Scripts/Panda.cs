@@ -51,7 +51,7 @@ public class Panda : MonoBehaviour, IInputHandler
     {
         SetIdle();
     }
-
+#if UNITY_EDITOR
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.K))
@@ -59,7 +59,7 @@ public class Panda : MonoBehaviour, IInputHandler
             TryRotate();
         }
     }
-    
+#endif
     IEnumerator RotatePandaUntilAlignWithCamera()
     {
         _isIdling = false;
@@ -79,14 +79,12 @@ public class Panda : MonoBehaviour, IInputHandler
         while ((_isRotating) && Vector3.Angle(targetDir, forwardDir) > angleThresholdToStop)
         {            
             forwardDir = _pandaTransformToRotate.forward;
-            //Debug.DrawRay(_pandaTransformToRotate.position, targetDir, Color.red);
-            //Debug.DrawRay(_pandaTransformToRotate.position, forwardDir, Color.yellow);
-            //Debug.Log(Vector3.Angle(targetDir, forwardDir));
-            
-            newDir = Vector3.RotateTowards(forwardDir, targetDir, step, 0.0f);
-            //Debug.Log("new dir " + newDir);
-            //Debug.DrawRay(_pandaTransformToRotate.position, newDir, Color.blue);            
+            newDir = Vector3.RotateTowards(forwardDir, targetDir, step, 0.0f);            
             _pandaTransformToRotate.rotation = Quaternion.LookRotation(newDir);
+
+            //Debug.DrawRay(_pandaTransformToRotate.position, targetDir, Color.red);
+            //Debug.DrawRay(_pandaTransformToRotate.position, forwardDir, Color.yellow);                      
+            //Debug.DrawRay(_pandaTransformToRotate.position, newDir, Color.blue);            
 
             yield return new WaitForFixedUpdate();
         }

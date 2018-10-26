@@ -1,4 +1,3 @@
-Initialized empty Git repository in C:/Users/Nutec1/Documents/Unity/HoloPanda/# HoloPanda/.git/
 # HoloPanda
 
 ## Tools for this project
@@ -8,3 +7,10 @@ Initialized empty Git repository in C:/Users/Nutec1/Documents/Unity/HoloPanda/# 
 * Microsoft [MixedRealityToolKit](https://github.com/Microsoft/MixedRealityToolkit-Unity) for Unity, version [2017.4.2.0](https://github.com/Microsoft/MixedRealityToolkit-Unity/releases/tag/2017.4.2.0) (already added into this repository)
 
 * Microsoft Visual Studio 2017
+
+## Speech commands
+
+* **Eat** - Panda eats that delicious bamboo
+* **Sit Down** - Panda lays on the floor
+* **Stay** or **Wake Up** - Panda stands up
+* **Over Here** or **c'mon** - Panda rotates towards the User

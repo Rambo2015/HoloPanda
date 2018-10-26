@@ -217,6 +217,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114154727598860592, guid: 5fab24cebbee63f4baf0b051bee65a12,
+        type: 2}
+      propertyPath: Keywords.Array.size
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4071028522850846, guid: 5fab24cebbee63f4baf0b051bee65a12, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -248,6 +253,21 @@ Prefab:
     - target: {fileID: 4071028522850846, guid: 5fab24cebbee63f4baf0b051bee65a12, type: 2}
       propertyPath: m_RootOrder
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114154727598860592, guid: 5fab24cebbee63f4baf0b051bee65a12,
+        type: 2}
+      propertyPath: Keywords.Array.data[3].Keyword
+      value: Over Here
+      objectReference: {fileID: 0}
+    - target: {fileID: 114154727598860592, guid: 5fab24cebbee63f4baf0b051bee65a12,
+        type: 2}
+      propertyPath: Keywords.Array.data[4].Keyword
+      value: C'mon
+      objectReference: {fileID: 0}
+    - target: {fileID: 114154727598860592, guid: 5fab24cebbee63f4baf0b051bee65a12,
+        type: 2}
+      propertyPath: Keywords.Array.data[5].Keyword
+      value: Wake Up
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5fab24cebbee63f4baf0b051bee65a12, type: 2}
